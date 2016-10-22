@@ -9,9 +9,11 @@ INITIALIZE_EASYLOGGINGPP
 int main(int argc, char *argv[]) {
     START_EASYLOGGINGPP(argc, argv);
 
+    std::cout << "Who am I ? where am I ?    Lei" << std::endl;
+
     int i = foo();
-    std::cout << str() << std::endl << i << std::endl;
-    LOG(INFO) << "Drawing...";
+    std::cout << str()  << std::endl << i + 1 << std::endl;
+    LOG(INFO) << "I'm drawing here...";
 
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
     sf::CircleShape shape(100.f);
